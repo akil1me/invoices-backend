@@ -76,4 +76,7 @@ app.use(async (req, res, next) => {
 app.use(auth);
 
 app.use(router);
-app.listen(3001);
+let port = process.env.PORT || 3001;
+app.listen(port, () => {
+  console.log("Server is running at the port " + port);
+});
