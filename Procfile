@@ -1,1 +1,1 @@
-web: /app/.npm-global/bin/json-server --watch db.json
+web: /invoices/.npm-global/bin/json-server --watch db.json
