@@ -1,1 +1,1 @@
-web: /.npm-global/bin/json-server --watch db.json
+web: /app/.npm-global/bin/json-server --watch db.json
