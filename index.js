@@ -76,7 +76,8 @@ app.use(async (req, res, next) => {
 app.use(auth);
 
 app.use(router);
-let port = process.env.PORT || 3001;
-app.listen(port, () => {
-  console.log("Server is running at the port " + port);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
