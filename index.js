@@ -65,7 +65,7 @@ app.use(async (req, res, next) => {
   ) {
     try {
       req.body.createdDate = new Date().toISOString();
-      req.body.paid = req.body.paid ?? false;
+      req.body.paid = req.body.paid || false;
       await invoiceValidationScheme.validate(req.body);
       return next();
     } catch (error) {
