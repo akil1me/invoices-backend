@@ -78,6 +78,6 @@ app.use(auth);
 
 app.use(router);
 
-const PORT = 80;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT);
